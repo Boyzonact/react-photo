@@ -16,13 +16,13 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="MyPhotoAlbum">
       <div className="galleryWrapper">
         <div className="filterItem">
           <ul>
             <li><button onClick={()=> setData(GalleryData)}>All</button></li>
             {
-              collection.map((item)=> <li><button onClick={()=>{gallery_filter(item)}}>{item}</button></li>)
+              collection.map((  item)=> <li><button onClick={()=>{gallery_filter(item)}}>{item}</button></li>)
             }
           </ul>
         </div>
